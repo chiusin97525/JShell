@@ -33,22 +33,39 @@ $ java driver/JShell
 ## JShell commands
 
 List of commands available in JShell:
+
 !
+
 cat
+
 cd
+
 cp
+
 curl
+
 echo
+
 exit
+
 grep
+
 history
+
 ls
+
 man
+
 mkdir
+
 mv
+
 popd
+
 pushd
+
 pwd
+
 JShell$
 
 The detailed usage of each command can be found in the program using the
@@ -56,7 +73,6 @@ command:
 
 ```
 JShell$ man CMD
-
 ```
 Where CMD is the command you would like to look up for.
 
