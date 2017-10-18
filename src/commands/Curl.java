@@ -14,7 +14,6 @@ import exception.InvalidNameException;
 import exception.InvalidNumberOfArgument;
 import exception.InvalidPathException;
 import exception.InvalidURLException;
-
 /**
  * Class to execute the curl Command: retrieves a file from a URL and adds it
  * to the current working directory
@@ -98,8 +97,9 @@ public class Curl extends Command {
    */
   private void getURLFile() throws InvalidURLException {
     try {
-      urlObj = new URL(parameter[0]);
-      /*
+	  if(parameter[0].startsWith("https://") || parameter[0].startsWith("http://")){
+		urlObj = new URL(parameter[0]);
+	  /*
        * openStream() opens the actual connection to the Internet, and returns
        * an inputStream from that URL.
        * 
@@ -134,7 +134,12 @@ public class Curl extends Command {
       // strip the extra newline character added at the end of the file
       if (fileContents.length() > 0) {
         fileContents = fileContents.substring(0, fileContents.length() - 1);
-      }
+		
+	  }
+	  }else{
+		throw new InvalidURLException("An invalid URL was specified.");
+	  }
+      
     } catch (MalformedURLException e) {
       throw new InvalidURLException();
     } catch (IOException e) {

@@ -1,23 +1,15 @@
 // **********************************************************
 // Assignment2:
 // Student1: Sin Chi Chiu
-// UTORID user_name: chiusin2
-// UT Student #: 1002312543
 // Author: Sin Chi Chiu
 //
 // Student2: Kevin Bato
-// UTORID user_name: batokevi
-// UT Student #: 1001264507
 // Author: Kevin Bato
 //
 // Student3: Jason Chow Fong
-// UTORID user_name: fongjas3
-// UT Student #: 1002672146
 // Author: Jason Chow Fong
 //
 // Student4: Haosen Xu
-// UTORID user_name: xuhaosen
-// UT Student #: 1002631976
 // Author: Haosen Xu
 //
 //
