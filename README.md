@@ -66,7 +66,6 @@ pushd
 
 pwd
 
-JShell$
 
 The detailed usage of each command can be found in the program using the
 command:
